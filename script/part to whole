@@ -12,6 +12,10 @@ SQL Functions Used:
 ===============================================================================
 */
 --  analyse how an individual part is perfroming compared to the overall. allowing to understanding which category has the greatest impact on the business
+                (meausures / total[meausure]) * 100 by [dimension]
+                (sales / total sales) * 100 by category 
+                (quantity / total quantity) * 100 by catogory 
+
 -- Which categories contribute the most to overall sales?
 WITH category_sales AS (
     SELECT
